@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <FrameLayout
+        android:id="@+id/copyofcamera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical" >
+    </FrameLayout>
+    -->
+
+    <com.dy.testcamera.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp" >
+    </com.dy.testcamera.AutoFitTextureView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@android:color/holo_blue_light" >
+
+        <ImageButton
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</LinearLayout>
