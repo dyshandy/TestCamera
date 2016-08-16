@@ -17,4 +17,8 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="maskDialog" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/colorMask</item>
+    </style>
+
 </resources>

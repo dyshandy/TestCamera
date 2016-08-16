@@ -1,4 +1,4 @@
-package com.dy.testcamera;
+package com.dy.test;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,12 +8,21 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
-import android.hardware.camera2.*;
+import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraCaptureSession;
+import android.hardware.camera2.CameraCharacteristics;
+import android.hardware.camera2.CameraDevice;
+import android.hardware.camera2.CameraManager;
+import android.hardware.camera2.CameraMetadata;
+import android.hardware.camera2.CaptureRequest;
+import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
@@ -24,6 +33,10 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.Toast;
+
+import com.dy.testcamera.AutoFitTextureView;
+import com.dy.testcamera.R;
+import com.dy.testcamera.TestActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 	private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
@@ -71,7 +84,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	private final CameraDevice.StateCallback stateCallback = new CameraDevice.StateCallback() {
 		// 摄像头被打开时激发该方法
 		@Override
-		public void onOpened(CameraDevice cameraDevice) {
+		public void onOpened(CameraDevice k) {
 			MainActivity.this.cameraDevice = cameraDevice;
 			// 开始预览
 			createCameraPreviewSession(); // ②
@@ -87,6 +100,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		// 打开摄像头出现错误时激发该方法
 		@Override
 		public void onError(CameraDevice cameraDevice, int error) {
+			System.out.println("------onerror");
 			cameraDevice.close();
 			MainActivity.this.cameraDevice = null;
 			MainActivity.this.finish();
@@ -101,11 +115,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		// 为该组件设置监听器
 		textureView.setSurfaceTextureListener(mSurfaceTextureListener);
 		findViewById(R.id.record).setOnClickListener(this);
+		findViewById(R.id.button1).setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View view) {
-		captureStillPicture();
+		switch (view.getId()) {
+		case R.id.record:
+			captureStillPicture();
+			break;
+		case R.id.button1:
+			startActivity(new Intent(MainActivity.this, TestActivity.class));
+		default:
+			break;
+		}
+
 	}
 
 	private void captureStillPicture() {
@@ -191,7 +215,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 			// 创建CameraCaptureSession，该对象负责管理处理预览请求和拍照请求
 			cameraDevice.createCaptureSession(
-					Arrays.asList(new Surface(texture), imageReader.getSurface()),
+					Arrays.asList(new Surface(texture),
+							imageReader.getSurface()),
 					new CameraCaptureSession.StateCallback() // ③
 					{
 						@Override
@@ -256,21 +281,20 @@ public class MainActivity extends Activity implements View.OnClickListener {
 						// 当照片数据可用时激发该方法
 						@Override
 						public void onImageAvailable(ImageReader reader) {
-							// 获取捕获的照片数据
-							Image image = reader.acquireNextImage();
-							ByteBuffer buffer = image.getPlanes()[0]
-									.getBuffer();
-							byte[] bytes = new byte[buffer.remaining()];
-							// 使用IO流将照片写入指定文件
-							File file = new File(getExternalFilesDir(null),
-									"pic.jpg");
-							buffer.get(bytes);
-							try (FileOutputStream output = new FileOutputStream(
-									file)) {
-								output.write(bytes);
-								Toast.makeText(MainActivity.this,
-										"保存: " + file, Toast.LENGTH_SHORT)
-										.show();
+																									// 获取捕获的照片数据
+																									Image image = reader.acquireNextImage();
+																									ByteBuffer buffer = image.getPlanes()[0].getBuffer();
+																									byte[] bytes = new byte[buffer.remaining()];
+																									// 使用IO流将照片写入指定文件
+																									File file = new File(getExternalFilesDir(null),
+																											"pic.jpg");
+																									buffer.get(bytes);
+																									try (FileOutputStream output = new FileOutputStream(
+																											file)) {
+																										output.write(bytes);
+																										Toast.makeText(MainActivity.this,
+																												"保存: " + file, Toast.LENGTH_SHORT)
+																												.show();
 							} catch (Exception e) {
 								e.printStackTrace();
 							} finally {

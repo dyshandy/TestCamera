@@ -14,11 +14,11 @@
     -->
 
     <com.dy.testcamera.AutoFitTextureView
-        android:id="@+id/texture"
+        android:id="@+id/copytexture"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:background="@android:color/holo_blue_light"
-        android:layout_weight="0.61" >
+        android:layout_weight="0.61"
+        android:background="@android:color/holo_blue_light" >
     </com.dy.testcamera.AutoFitTextureView>
 
     <LinearLayout
@@ -27,14 +27,8 @@
         android:background="@android:color/holo_blue_light"
         android:gravity="center" >
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
         <ImageButton
-            android:id="@+id/record"
+            android:id="@+id/copyrecord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_launcher"

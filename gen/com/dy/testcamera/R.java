@@ -9,6 +9,191 @@ package com.dy.testcamera;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int auto_play=0x7f010011;
+        /**  back按钮文案 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int backText=0x7f010002;
+        /**  是否有back按钮 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int canBack=0x7f010001;
+        /**  是否可以跳转 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int canNav=0x7f010008;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int changeInterval=0x7f010010;
+        /**  内容或当前状态 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int content=0x7f010006;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int dotsBackground=0x7f01000e;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotsBgAlpha=0x7f01000f;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dotsBlurImage=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dotsFocusImage=0x7f01000c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotsSpacing=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dotsViewHeight=0x7f01000a;
+        /**  是否是列表中最后一个 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int isBottom=0x7f010007;
+        /**  是否是开关 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int isSwitch=0x7f010009;
+        /**  右侧更多功能按钮图片 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int moreImg=0x7f010003;
+        /**  右侧更多功能按钮文字 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int moreText=0x7f010004;
+        /**  名称 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int name=0x7f010005;
+        /**  标题文案 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleText=0x7f010000;
+    }
+    public static final class color {
+        public static final int background=0x7f040008;
+        public static final int background_gray1=0x7f04000f;
+        public static final int background_gray2=0x7f040010;
+        public static final int background_gray3=0x7f040011;
+        public static final int background_gray4=0x7f040012;
+        public static final int black=0x7f040019;
+        /**  窗体颜色 
+         */
+        public static final int black2=0x7f04000e;
+        public static final int btn_blue=0x7f04001c;
+        public static final int btn_blue_hover=0x7f04001d;
+        public static final int btn_red=0x7f04001a;
+        public static final int btn_red_hover=0x7f04001b;
+        public static final int btn_text=0x7f04001e;
+        public static final int btn_text_hover=0x7f04001f;
+        public static final int colorAccent=0x7f040006;
+        /**  蒙版 
+         */
+        public static final int colorMask=0x7f040020;
+        public static final int colorPrimary=0x7f040004;
+        public static final int colorPrimaryDark=0x7f040005;
+        public static final int default_text=0x7f04000c;
+        public static final int f2=0x7f04000b;
+        public static final int gray=0x7f04000a;
+        public static final int green1=0x7f040002;
+        public static final int greenn=0x7f040003;
+        public static final int greeny=0x7f040001;
+        public static final int line=0x7f040013;
+        public static final int line_btn=0x7f040014;
+        public static final int line_color=0x7f04000d;
+        public static final int panel_black=0x7f040017;
+        public static final int test=0x7f040000;
+        public static final int text_gray1=0x7f040015;
+        public static final int text_gray2=0x7f040016;
+        public static final int transparent=0x7f040007;
+        public static final int white=0x7f040018;
+        /**  窗体颜色 
+         */
+        public static final int windows_color=0x7f040009;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -18,27 +203,321 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int btn_video=0x7f020000;
+        public static final int btn_video_hover=0x7f020001;
+        public static final int btn_video_record=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int style_recorder_progress=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f080002;
-        public static final int record=0x7f080001;
-        public static final int texture=0x7f080000;
+        public static final int action_settings=0x7f09000c;
+        public static final int btn_record=0x7f090009;
+        public static final int button1=0x7f090002;
+        public static final int camera_preview=0x7f090008;
+        public static final int container=0x7f090000;
+        public static final int content=0x7f09000b;
+        public static final int copyrecord=0x7f090005;
+        public static final int copytexture=0x7f090004;
+        public static final int info=0x7f09000a;
+        public static final int progress_left=0x7f090006;
+        public static final int progress_right=0x7f090007;
+        public static final int record=0x7f090003;
+        public static final int texture=0x7f090001;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_camera=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int copyofactivity_main=0x7f030002;
+        public static final int dialog_video_input=0x7f030003;
+        public static final int fragment=0x7f030004;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int a=0x7f0600e2;
+        public static final int about_imsdk=0x7f0600de;
+        public static final int about_log=0x7f0600e1;
+        public static final int about_qalsdk=0x7f0600df;
+        /**  about activity 
+         */
+        public static final int about_title=0x7f0600dd;
+        public static final int about_tlssdk=0x7f0600e0;
+        public static final int action_bar_back=0x7f060004;
+        public static final int action_settings=0x7f060002;
+        public static final int add_detail_ID=0x7f060038;
+        public static final int add_detail_group=0x7f06003a;
+        public static final int add_detail_message=0x7f06003b;
+        public static final int add_detail_name=0x7f060039;
+        public static final int add_dialog_null=0x7f060049;
+        public static final int add_dialog_subtitle=0x7f060048;
+        public static final int add_dialog_title=0x7f060047;
+        public static final int add_friend_added=0x7f06003e;
+        public static final int add_friend_del_black_err=0x7f060043;
+        public static final int add_friend_del_black_list=0x7f060042;
+        public static final int add_friend_del_black_succ=0x7f060044;
+        public static final int add_friend_error=0x7f060041;
+        public static final int add_friend_refuse_all=0x7f06003f;
+        public static final int add_friend_send=0x7f06003c;
+        public static final int add_friend_succeed=0x7f06003d;
+        public static final int add_friend_to_blacklist=0x7f060040;
+        public static final int add_group_error=0x7f060051;
+        public static final int add_group_error_existed=0x7f06004f;
+        public static final int add_group_error_limit=0x7f060050;
+        public static final int add_group_succ=0x7f06004e;
+        public static final int add_new_group=0x7f060046;
+        public static final int addfriend=0x7f060028;
+        public static final int agree=0x7f060007;
+        public static final int agreed=0x7f060008;
+        public static final int app_name=0x7f060000;
+        public static final int btn__create_chatroom=0x7f0600b2;
+        public static final int btn__create_private_group=0x7f0600b7;
+        public static final int btn__create_public_group=0x7f0600ad;
+        public static final int btn_add_member=0x7f0600bd;
+        public static final int cancel=0x7f060006;
+        /**  change category activity 
+         */
+        public static final int change_category_title=0x7f0600c3;
+        public static final int change_group_error=0x7f060010;
+        public static final int chat_audio_too_short=0x7f06005a;
+        public static final int chat_del=0x7f06005d;
+        public static final int chat_file=0x7f060054;
+        public static final int chat_file_not_exist=0x7f060060;
+        public static final int chat_file_too_large=0x7f06005f;
+        /**  chat activity 
+         */
+        public static final int chat_image=0x7f060053;
+        public static final int chat_image_preview_load_err=0x7f060063;
+        public static final int chat_image_preview_ori=0x7f060064;
+        public static final int chat_image_preview_send=0x7f060062;
+        public static final int chat_image_preview_title=0x7f060061;
+        public static final int chat_photo=0x7f060055;
+        public static final int chat_press_talk=0x7f060057;
+        public static final int chat_release_send=0x7f060058;
+        public static final int chat_resend=0x7f06005c;
+        public static final int chat_save=0x7f06005e;
+        public static final int chat_setting_add=0x7f06007f;
+        public static final int chat_setting_change_err=0x7f060082;
+        public static final int chat_setting_change_group_intro=0x7f060084;
+        public static final int chat_setting_change_group_name=0x7f060083;
+        public static final int chat_setting_dismiss=0x7f06007e;
+        public static final int chat_setting_dismiss_succ=0x7f060080;
+        public static final int chat_setting_group_add_opt=0x7f060077;
+        public static final int chat_setting_group_all_accept=0x7f06007a;
+        public static final int chat_setting_group_all_reject=0x7f06007b;
+        public static final int chat_setting_group_auth=0x7f06007c;
+        public static final int chat_setting_group_id=0x7f060075;
+        public static final int chat_setting_group_introduce=0x7f060079;
+        public static final int chat_setting_group_member=0x7f060074;
+        public static final int chat_setting_group_msg_alert=0x7f060078;
+        public static final int chat_setting_group_name=0x7f060076;
+        public static final int chat_setting_no_rev=0x7f060085;
+        public static final int chat_setting_quit=0x7f06007d;
+        public static final int chat_setting_quit_succ=0x7f060081;
+        public static final int chat_setting_rev_not_notify=0x7f060087;
+        public static final int chat_setting_rev_notify=0x7f060086;
+        /**  group profile activity 
+         */
+        public static final int chat_setting_title=0x7f060073;
+        public static final int chat_typing=0x7f060065;
+        public static final int chat_up_finger=0x7f060059;
+        public static final int chat_video=0x7f060056;
+        public static final int chat_video_too_short=0x7f06005b;
+        public static final int chatroom=0x7f060027;
+        public static final int choose_need_one=0x7f0600c7;
+        /**  choose activity 
+         */
+        public static final int choose_title=0x7f0600c6;
+        public static final int confirm=0x7f060005;
+        public static final int contact_add_group=0x7f060029;
+        public static final int conversation_del=0x7f060022;
+        /**  conversation fragment 
+         */
+        public static final int conversation_system=0x7f06001f;
+        public static final int conversation_system_friend=0x7f060020;
+        public static final int conversation_system_group=0x7f060021;
+        public static final int create_group_fail=0x7f0600bf;
+        public static final int create_group_fail_because_wording=0x7f0600c0;
+        public static final int create_group_need_name=0x7f0600c2;
+        public static final int create_group_succeed=0x7f0600c1;
+        public static final int default_group_name=0x7f06000f;
+        public static final int del_group_error=0x7f060052;
+        public static final int delete_dialog_subtitle=0x7f06004b;
+        public static final int delete_dialog_subtitle_sur=0x7f06004c;
+        public static final int delete_group_succ=0x7f06004d;
+        public static final int discuss_group=0x7f060026;
+        public static final int done=0x7f06000b;
+        public static final int download_fail=0x7f060018;
+        public static final int downloading=0x7f060019;
+        /**  edit activity 
+         */
+        public static final int edit_error=0x7f0600c5;
+        public static final int friend_allow_all=0x7f06000c;
+        public static final int friend_need_confirm=0x7f06000e;
+        public static final int friend_refuse_all=0x7f06000d;
+        public static final int friendship_handle_ok=0x7f0600da;
+        public static final int friendship_handle_reject=0x7f0600db;
+        /**  friendship handle activity 
+         */
+        public static final int friendship_handle_title=0x7f0600d9;
+        public static final int friendship_handle_word=0x7f0600dc;
+        public static final int group_member_card=0x7f0600cb;
+        public static final int group_member_change_card=0x7f0600d8;
+        public static final int group_member_del=0x7f0600cc;
+        public static final int group_member_del_err=0x7f0600cd;
+        public static final int group_member_del_succ=0x7f0600ce;
+        public static final int group_member_manage=0x7f0600ca;
+        public static final int group_member_manage_set_err=0x7f0600cf;
+        public static final int group_member_manage_set_succ=0x7f0600d1;
+        public static final int group_member_manage_set_type_err=0x7f0600d0;
+        /**  group member profile activity 
+         */
+        public static final int group_member_profile=0x7f0600c8;
+        public static final int group_member_quiet=0x7f0600c9;
+        public static final int group_member_quiet_cancel=0x7f0600d6;
+        public static final int group_member_quiet_err=0x7f0600d7;
+        public static final int group_member_quiet_ing=0x7f0600d2;
+        public static final int group_member_quiet_one_day=0x7f0600d5;
+        public static final int group_member_quiet_one_hour=0x7f0600d4;
+        public static final int group_member_quiet_ten_min=0x7f0600d3;
+        /**  TODO: Remove or change this placeholder text 
+         */
+        public static final int hello_blank_fragment=0x7f060003;
+        public static final int hello_world=0x7f060001;
+        /**  contact fragment 
+         */
+        public static final int home_contact_tab=0x7f060023;
+        /**  home activity 
+         */
+        public static final int home_conversation_tab=0x7f06001d;
+        public static final int home_mine_tab=0x7f06001e;
+        public static final int kick_logout=0x7f060014;
+        public static final int login_error=0x7f060012;
+        public static final int login_succ=0x7f060013;
+        public static final int manangergroup=0x7f06002a;
+        public static final int need_permission=0x7f060016;
+        public static final int new_friend=0x7f060024;
+        public static final int newfri_accept=0x7f06008d;
+        public static final int newfri_agree=0x7f060089;
+        public static final int newfri_disagree=0x7f06008c;
+        public static final int newfri_do=0x7f06008b;
+        public static final int newfri_reject=0x7f06008a;
+        public static final int newfri_wait=0x7f06008e;
+        public static final int operate_fail=0x7f060015;
+        public static final int people=0x7f060011;
+        public static final int profile_back=0x7f060067;
+        public static final int profile_black=0x7f06006a;
+        public static final int profile_black_succ=0x7f060072;
+        public static final int profile_chat=0x7f06006c;
+        public static final int profile_del=0x7f06006d;
+        public static final int profile_del_fail=0x7f060071;
+        public static final int profile_del_succeed=0x7f060070;
+        /**  profile activity 
+         */
+        public static final int profile_detail=0x7f060066;
+        public static final int profile_group=0x7f06006e;
+        public static final int profile_id=0x7f060068;
+        public static final int profile_now_group=0x7f06006f;
+        public static final int profile_remark=0x7f060069;
+        public static final int profile_remark_edit=0x7f06006b;
+        public static final int public_group=0x7f060025;
+        public static final int refuse=0x7f060009;
+        public static final int refused=0x7f06000a;
+        public static final int save_fail=0x7f06001a;
+        public static final int save_succ=0x7f060017;
+        public static final int search_cancel=0x7f060034;
+        /**  Add newfriend activity 
+         */
+        public static final int search_default=0x7f060033;
+        /**  search group activity 
+         */
+        public static final int search_group_hint=0x7f0600c4;
+        public static final int search_hint=0x7f060035;
+        public static final int search_no_result=0x7f060036;
+        /**  home activity 
+         */
+        public static final int send_success=0x7f06001c;
+        public static final int setting_about=0x7f06002f;
+        public static final int setting_black_list=0x7f06002e;
+        public static final int setting_friend_confirm=0x7f06002d;
+        public static final int setting_friend_confirm_change_err=0x7f060032;
+        public static final int setting_friend_need_confirm=0x7f060030;
+        /**  settings fragment 
+         */
+        public static final int setting_logout=0x7f06002b;
+        public static final int setting_logout_fail=0x7f06002c;
+        public static final int setting_nick_name_change=0x7f060031;
+        public static final int subtitle_create_group_name=0x7f0600bc;
+        public static final int subtitle_created_public_group=0x7f0600ae;
+        public static final int subtitle_hosting_chatroom=0x7f0600b4;
+        public static final int subtitle_hosting_private_group=0x7f0600b9;
+        public static final int subtitle_hosting_public_group=0x7f0600af;
+        public static final int subtitle_joined_chatroom=0x7f0600b5;
+        public static final int subtitle_joined_private_group=0x7f0600ba;
+        public static final int subtitle_joined_public_group=0x7f0600b0;
+        public static final int subtitle_owner_chatrrom=0x7f0600b3;
+        public static final int subtitle_owner_private_group=0x7f0600b8;
+        public static final int summary_agree=0x7f06009b;
+        public static final int summary_disagree=0x7f06009c;
+        public static final int summary_file=0x7f060092;
+        public static final int summary_friend_add=0x7f060093;
+        public static final int summary_friend_add_me=0x7f060095;
+        public static final int summary_friend_added=0x7f060094;
+        public static final int summary_friend_recommend=0x7f060096;
+        public static final int summary_group_add=0x7f06009a;
+        public static final int summary_group_admin_change=0x7f06009f;
+        public static final int summary_group_apply=0x7f060098;
+        public static final int summary_group_info_change=0x7f0600a0;
+        public static final int summary_group_invite=0x7f060099;
+        public static final int summary_group_mem_add=0x7f0600a2;
+        public static final int summary_group_mem_change=0x7f0600a1;
+        public static final int summary_group_mem_kick=0x7f0600a4;
+        public static final int summary_group_mem_modify=0x7f0600a5;
+        public static final int summary_group_mem_quit=0x7f0600a3;
+        public static final int summary_handle_person=0x7f06009e;
+        /**  message 
+         */
+        public static final int summary_image=0x7f06008f;
+        public static final int summary_invite_person=0x7f06009d;
+        public static final int summary_me=0x7f060097;
+        public static final int summary_video=0x7f060091;
+        public static final int summary_voice=0x7f060090;
+        public static final int time_day=0x7f0600a7;
+        public static final int time_month=0x7f0600a8;
+        public static final int time_more=0x7f0600aa;
+        public static final int time_year=0x7f0600a9;
+        /**  time 
+         */
+        public static final int time_yesterday=0x7f0600a6;
+        public static final int title_activity_group_chat_setting=0x7f0600ab;
+        /**  Add newfriend activity 
+         */
+        public static final int title_addfri=0x7f060037;
+        /**  chatroom 
+         */
+        public static final int title_chatroom=0x7f0600b1;
+        public static final int title_choose_group_members=0x7f0600be;
+        public static final int title_confirm_delete_group=0x7f06004a;
+        /**  creategroup 
+         */
+        public static final int title_create_group=0x7f0600bb;
+        /**  Manager group activity 
+         */
+        public static final int title_manager_group=0x7f060045;
+        /**  Add newfri activity 
+         */
+        public static final int title_new_fri=0x7f060088;
+        /**  privategroup 
+         */
+        public static final int title_private_group=0x7f0600b6;
+        /**  publicgroup 
+         */
+        public static final int title_public_group=0x7f0600ac;
+        public static final int tls_expire=0x7f06001b;
     }
     public static final class style {
         /** 
@@ -62,10 +541,375 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        public static final int maskDialog=0x7f070002;
     }
+    public static final class styleable {
+        /**  自定义带点的viewpager 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DotViewPager_android_gravity android:gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_android_scaleType android:scaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_changeInterval com.dy.testcamera:changeInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsBackground com.dy.testcamera:dotsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsBgAlpha com.dy.testcamera:dotsBgAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsBlurImage com.dy.testcamera:dotsBlurImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsFocusImage com.dy.testcamera:dotsFocusImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsSpacing com.dy.testcamera:dotsSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #DotViewPager_dotsViewHeight com.dy.testcamera:dotsViewHeight}</code></td><td></td></tr>
+           </table>
+           @see #DotViewPager_android_gravity
+           @see #DotViewPager_android_scaleType
+           @see #DotViewPager_changeInterval
+           @see #DotViewPager_dotsBackground
+           @see #DotViewPager_dotsBgAlpha
+           @see #DotViewPager_dotsBlurImage
+           @see #DotViewPager_dotsFocusImage
+           @see #DotViewPager_dotsSpacing
+           @see #DotViewPager_dotsViewHeight
+         */
+        public static final int[] DotViewPager = {
+            0x010100af, 0x0101011d, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
+          attribute's value can be found in the {@link #DotViewPager} array.
+          @attr name android:gravity
+        */
+        public static final int DotViewPager_android_gravity = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#scaleType}
+          attribute's value can be found in the {@link #DotViewPager} array.
+          @attr name android:scaleType
+        */
+        public static final int DotViewPager_android_scaleType = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#changeInterval}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.dy.testcamera:changeInterval
+        */
+        public static final int DotViewPager_changeInterval = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsBackground}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.dy.testcamera:dotsBackground
+        */
+        public static final int DotViewPager_dotsBackground = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsBgAlpha}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.dy.testcamera:dotsBgAlpha
+        */
+        public static final int DotViewPager_dotsBgAlpha = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsBlurImage}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.dy.testcamera:dotsBlurImage
+        */
+        public static final int DotViewPager_dotsBlurImage = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsFocusImage}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.dy.testcamera:dotsFocusImage
+        */
+        public static final int DotViewPager_dotsFocusImage = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsSpacing}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.dy.testcamera:dotsSpacing
+        */
+        public static final int DotViewPager_dotsSpacing = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#dotsViewHeight}
+          attribute's value can be found in the {@link #DotViewPager} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.dy.testcamera:dotsViewHeight
+        */
+        public static final int DotViewPager_dotsViewHeight = 2;
+        /**  条形控制控件自定义属性 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LineControllerView_canNav com.dy.testcamera:canNav}</code></td><td> 是否可以跳转 </td></tr>
+           <tr><td><code>{@link #LineControllerView_content com.dy.testcamera:content}</code></td><td> 内容或当前状态 </td></tr>
+           <tr><td><code>{@link #LineControllerView_isBottom com.dy.testcamera:isBottom}</code></td><td> 是否是列表中最后一个 </td></tr>
+           <tr><td><code>{@link #LineControllerView_isSwitch com.dy.testcamera:isSwitch}</code></td><td> 是否是开关 </td></tr>
+           <tr><td><code>{@link #LineControllerView_name com.dy.testcamera:name}</code></td><td> 名称 </td></tr>
+           </table>
+           @see #LineControllerView_canNav
+           @see #LineControllerView_content
+           @see #LineControllerView_isBottom
+           @see #LineControllerView_isSwitch
+           @see #LineControllerView_name
+         */
+        public static final int[] LineControllerView = {
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009
+        };
+        /**
+          <p>
+          @attr description
+           是否可以跳转 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:canNav
+        */
+        public static final int LineControllerView_canNav = 3;
+        /**
+          <p>
+          @attr description
+           内容或当前状态 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:content
+        */
+        public static final int LineControllerView_content = 1;
+        /**
+          <p>
+          @attr description
+           是否是列表中最后一个 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:isBottom
+        */
+        public static final int LineControllerView_isBottom = 2;
+        /**
+          <p>
+          @attr description
+           是否是开关 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:isSwitch
+        */
+        public static final int LineControllerView_isSwitch = 4;
+        /**
+          <p>
+          @attr description
+           名称 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:name
+        */
+        public static final int LineControllerView_name = 0;
+        /**  自定义支持播放GIF动图的imageview 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PowerImageView_auto_play com.dy.testcamera:auto_play}</code></td><td></td></tr>
+           </table>
+           @see #PowerImageView_auto_play
+         */
+        public static final int[] PowerImageView = {
+            0x7f010011
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.dy.testcamera.R.attr#auto_play}
+          attribute's value can be found in the {@link #PowerImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.dy.testcamera:auto_play
+        */
+        public static final int PowerImageView_auto_play = 0;
+        /**  标题模板自定义属性 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TemplateTitle_backText com.dy.testcamera:backText}</code></td><td> back按钮文案 </td></tr>
+           <tr><td><code>{@link #TemplateTitle_canBack com.dy.testcamera:canBack}</code></td><td> 是否有back按钮 </td></tr>
+           <tr><td><code>{@link #TemplateTitle_moreImg com.dy.testcamera:moreImg}</code></td><td> 右侧更多功能按钮图片 </td></tr>
+           <tr><td><code>{@link #TemplateTitle_moreText com.dy.testcamera:moreText}</code></td><td> 右侧更多功能按钮文字 </td></tr>
+           <tr><td><code>{@link #TemplateTitle_titleText com.dy.testcamera:titleText}</code></td><td> 标题文案 </td></tr>
+           </table>
+           @see #TemplateTitle_backText
+           @see #TemplateTitle_canBack
+           @see #TemplateTitle_moreImg
+           @see #TemplateTitle_moreText
+           @see #TemplateTitle_titleText
+         */
+        public static final int[] TemplateTitle = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>
+          @attr description
+           back按钮文案 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:backText
+        */
+        public static final int TemplateTitle_backText = 2;
+        /**
+          <p>
+          @attr description
+           是否有back按钮 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:canBack
+        */
+        public static final int TemplateTitle_canBack = 1;
+        /**
+          <p>
+          @attr description
+           右侧更多功能按钮图片 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:moreImg
+        */
+        public static final int TemplateTitle_moreImg = 3;
+        /**
+          <p>
+          @attr description
+           右侧更多功能按钮文字 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:moreText
+        */
+        public static final int TemplateTitle_moreText = 4;
+        /**
+          <p>
+          @attr description
+           标题文案 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.dy.testcamera:titleText
+        */
+        public static final int TemplateTitle_titleText = 0;
+    };
 }
